@@ -1,0 +1,626 @@
+<!--$page-title Churchwardens at St. Andrew's &mdash; About Us-->
+<!--$description Churchwardens history at St. Andrew's Church, Ferring-->
+<!--$dir ../../-->
+<!--$jquery <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+-->
+<!--$keywords churchwarden, history, warden -->
+<!--$sidebarscript <script>
+    // Script to make content and sidebar same height no matter what!
+    // placing objects inside variables
+
+    //#added the below if statement to make sure this doesn't run on mobile
+
+    if ($(window).width() > 550){
+      var content = $('#contentBox');
+      var sidebar = $('#sidebarBox');
+      var count = 0;
+      var myTimer;
+
+      function setEqualContainer() {
+        // get content and sidebar height in variables
+        var getContentHeight = content.outerHeight();
+        var getSidebarHeight = sidebar.outerHeight();
+
+        // check if content height is bigger than sidebar
+        if ( getContentHeight > getSidebarHeight ) {
+          sidebar.css('min-height', getContentHeight);
+        }
+
+        // check if sidebar height is bigger than content
+        if ( getSidebarHeight > getContentHeight ) {
+          content.css('min-height', getSidebarHeight);
+        }
+      }
+
+      // creating the timer which will run every 500 milliseconds
+      // and will stop after the container will be loaded
+      // ...or after 15 seconds to not eat a lot of memory
+      myTimer = setInterval( function() {
+        count++;
+
+        if ( $('.testContainer').length == 0 ) {
+          setEqualContainer();
+        } else {
+          setEqualContainer();
+          clearInterval(myTimer);
+        }
+
+        if ( count == 15) {
+          clearInterval(myTimer);
+        }
+      }, 500);
+    }
+  </script>
+-->
+<!--$tablescript <script>
+    // fix for mobile table layout
+
+    var headertext = [];
+    var headers = document.querySelectorAll("thead");
+    var tablebody = document.querySelectorAll("tbody");
+
+    for (var i = 0; i < headers.length; i++) {
+      headertext[i]=[];
+      for (var j = 0, headrow; headrow = headers[i].rows[0].cells[j]; j++) {
+        var current = headrow;
+        headertext[i].push(current.textContent);
+        }
+    }
+
+    for (var h = 0, tbody; tbody = tablebody[h]; h++) {
+      for (var i = 0, row; row = tbody.rows[i]; i++) {
+        for (var j = 0, col; col = row.cells[j]; j++) {
+          col.setAttribute("data-th", headertext[h][j]);
+        }
+      }
+    }
+  </script>
+-->
+<!--$unitegallery nil-->
+
+<!--@import opening-->
+
+    <!--Row begins--><div class="row">
+
+      <!--Side navigation/info begin #side--><div class="four columns" id="sidebarBox">
+
+        <h3 class="list-title">About Us</h3>
+
+        <ul id="sidebarLinks">
+          <li><a href="../">Who's Who</a></li>
+          <li><a href="https://goo.gl/maps/NSJ76SqrDo32">Where To Find<br />St. Andrew's</a></li>
+          <li><a href="../history">History</a></li>
+          <li><a href="../priests">Priests at<br />St. Andrew's</a></li>
+          <li><a href="#">Churchwardens at<br />St Andrew's</a></li>
+        </ul>
+      </div><!--Side navigation/info ends-->
+
+      <!--Content begins #content--><div class="eight columns nomargin" id="contentBox">
+
+        <h1 class="title">Churchwardens at St. Andrew's</h1>
+
+        <table id="tableBig" summary="St. Andrew's Church list of contacts">
+          <thead>
+            <tr>
+              <th scope="col">Year</th>
+              <th scope="col">Priest</th>
+              <th scope="col">Churchwarden</th>
+              <th scope="col">Churchwarden</th>
+              <th scope="col">Emeritus</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td scope="row">2016&nbsp; - 2017</td>
+              <td scope="row">Gary Ingram</td>
+              <td scope="row">John Soper</td>
+              <td scope="row">Gail Holly</td>
+            </tr>
+
+            <tr>
+              <td scope="row">2015&nbsp; - 2016</td>
+              <td scope="row">Gary Ingram</td>
+              <td scope="row">John Soper</td>
+              <td scope="row">Margaret Metcalf</td>
+            </tr>
+
+            <tr>
+              <td scope="row">2014&nbsp; - 2015</td>
+              <td scope="row">Gary Ingram</td>
+              <td scope="row">John Soper</td>
+              <td scope="row">Margaret Metcalf</td>
+            </tr>
+
+            <tr>
+              <td scope="row">2013&nbsp; - 2014</td>
+              <td scope="row">Gary Ingram</td>
+              <td scope="row">Gail Holly</td>
+              <td scope="row">Margaret Metcalf</td>
+            </tr>
+            <tr>
+              <td scope="row">2012&nbsp; - 2013</td>
+              <td scope="row">Gary Ingram</td>
+              <td scope="row">Gail Holly</td>
+              <td scope="row">Margaret Metcalf</td>
+            </tr>
+            <tr>
+              <td scope="row">2011&nbsp; - 2012</td>
+              <td scope="row">Gary Ingram</td>
+              <td scope="row">Gail Holly</td>
+              <td scope="row">Tessa Bailey</td>
+            </tr>
+            <tr>
+              <td scope="row">2010&nbsp; - 2011</td>
+              <td scope="row">Gary Ingram</td>
+              <td scope="row">Mark Lumley</td>
+              <td scope="row">Tessa Bailey</td>
+            </tr>
+            <tr>
+              <td scope="row">2009&nbsp; - 2010</td>
+              <td scope="row">Gary Ingram</td>
+              <td scope="row">Mark Lumley</td>
+              <td scope="row">Tessa Bailey</td>
+            </tr>
+
+
+            <tr>
+              <td scope="row">2008&nbsp; - 2009</td>
+              <td scope="row">Interregnum</td>
+              <td scope="row">Diana Wood</td>
+              <td scope="row">Valerie Kossick</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">2007&nbsp; - 2008</td>
+              <td scope="row">Terry Stratford</td>
+              <td scope="row">Diana Wood</td>
+              <td scope="row">Valerie Kossick</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">2006&nbsp; - 2007</td>
+              <td scope="row">Terry Stratford</td>
+              <td scope="row">Ian Young</td>
+              <td scope="row">Anthony Allcock</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">2005&nbsp; - 2006</td>
+              <td scope="row">Terry Stratford</td>
+              <td scope="row">Ian Young</td>
+              <td scope="row">Anthony Allcock</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">2004&nbsp; - 2005</td>
+              <td scope="row">Terry Stratford</td>
+              <td scope="row">Ian Young</td>
+              <td scope="row">Sue Pratt</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">2003&nbsp; - 2004</td>
+              <td scope="row">Terry Stratford</td>
+              <td scope="row">Peter Wood</td>
+              <td scope="row">Sue Pratt</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">2002&nbsp; - 2003</td>
+              <td scope="row">Terry Stratford</td>
+              <td scope="row">Peter Wood</td>
+              <td scope="row">Sue Pratt</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">2001&nbsp; - 2002</td>
+              <td scope="row">Terry Stratford</td>
+              <td scope="row">Peter Wood</td>
+              <td scope="row">Carol Wood</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">2000&nbsp; - 2001</td>
+              <td scope="row">Interregnum</td>
+              <td scope="row">Susan Maund</td>
+              <td scope="row">Carol Wood</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1999&nbsp; - 2000</td>
+              <td scope="row">Keith McNicol</td>
+              <td scope="row">Susan Maund</td>
+              <td scope="row">Carol Wood</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1998&nbsp; - 1999</td>
+              <td scope="row">Keith McNicol</td>
+              <td scope="row">Susan Maund</td>
+              <td scope="row">Mark Lumley</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1997&nbsp; - 1998</td>
+              <td scope="row">Keith McNicol</td>
+              <td scope="row">Susan Maund</td>
+              <td scope="row">Mark Lumley</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1996&nbsp; - 1997</td>
+              <td scope="row">Keith McNicol</td>
+              <td scope="row">Ian Cheal</td>
+              <td scope="row">Mark Lumley</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1995&nbsp; - 1996</td>
+              <td scope="row">Interregnum</td>
+              <td scope="row">Ian Cheal</td>
+              <td scope="row">Jean Nesbitt</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1994&nbsp; - 1995</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Ian Cheal</td>
+              <td scope="row">Jean Nesbitt</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1993&nbsp; - 1994</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr J Chown</td>
+              <td scope="row">Jean Nesbitt</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1992 - 1993</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr JC Hetherington</td>
+              <td scope="row">Jean Nesbitt</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1991 - 1992</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr JC Hetherington</td>
+              <td scope="row">Mr RG Kirkham</td>
+              <td scope="row">Mr HT Colmer</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1990 - 1991</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr HT Colmer</td>
+              <td scope="row">Mr RG Kirkham</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1989 - 1990</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr HT Colmer</td>
+              <td scope="row">Mr RG Kirkham</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1988 - 1989</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr HT Colmer</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1987 - 1988</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr HT Colmer</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1986 - 1987</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr AR Flude</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1985 - 1986</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr AR Flude</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1984 - 1985</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr AR Flude</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1983 - 1984</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr S Beckett</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1982 - 1983</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr S Beckett</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1981 - 1982</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr S Beckett</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1980 - 1981</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr S Beckett</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1979 - 1980</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr S Beckett</td>
+              <td scope="row">Mr JS Farrier</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1978 - 1979</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr SB Knowles</td>
+              <td scope="row">Mr JF Yates</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1977 - 1978</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr SB Knowles</td>
+              <td scope="row">Mr JF Yates</td>
+            </tr>
+
+            <tr>
+              <td scope="row">1976 - 1977</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr C Hansen</td>
+              <td scope="row">Mr JF Yates</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1975 - 1976</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr FS Tarrant / Mr C Hansen</td>
+              <td scope="row">Mr JF Yates</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1974 - 1975</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr FS Tarrant </td>
+              <td scope="row">Mr JF Yates</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1973 - 1974</td>
+              <td scope="row">Rex Paterson</td>
+              <td scope="row">Mr FS Tarrant </td>
+              <td scope="row">Mr JF Yates</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1972 - 1973</td>
+              <td scope="row">Interregnum</td>
+              <td scope="row">Mr AP McIntosh</td>
+              <td scope="row">Mr JF Yates</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1971 - 1972</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr AP McIntosh</td>
+              <td scope="row">Mr JF Yates</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1970 - 1971</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr AP McIntosh</td>
+              <td scope="row">Mr JF Yates</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1969 - 1970</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr AP McIntosh</td>
+              <td scope="row">Mr HJ Stocken</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1968 - 1969</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr AP McIntosh</td>
+              <td scope="row">Mr HJ Stocken</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1967 - 1968</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Mr HJ Stocken</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1966 - 1967</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Mr HJ Stocken</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1965 - 1966</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Mr HJ Stocken</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1964 - 1965</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Mr A Hayward</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1963 - 1964</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Major VW Westwater</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1962 - 1969</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Major VW Westwater</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1961 - 1962</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Major VW Westwater</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1960 - 1961</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Major VW Westwater</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1959 - 1960</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Major VW Westwater</td>
+
+            </tr>
+
+            <tr>
+              <td scope="row">1958 - 1959</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Major VW Westwater</td>
+
+            </tr>
+
+            <tr>
+              <td scope="row">1957 - 1958</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Major VW Westwater</td>
+
+            </tr>
+
+            <tr>
+              <td scope="row">1956 - 1957</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Major VW Westwater</td>
+
+            </tr>
+
+            <tr>
+              <td scope="row">1955 - 1956</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr CA Perry, JP</td>
+              <td scope="row">Mr H White</td>
+
+            </tr>
+            <tr>
+              <td scope="row">1954 - 1955</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr PB Gray</td>
+              <td scope="row">Mr H White</td>
+
+            </tr>
+
+            <tr>
+              <td scope="row">1953 - 1954</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr PB Gray</td>
+              <td scope="row">Mr Finch</td>
+
+            </tr>
+
+            <tr>
+              <td scope="row">1952 - 1953</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr PB Gray</td>
+              <td scope="row">Mr AJ Brown</td>
+
+            </tr>
+
+            <tr>
+              <td scope="row">1951 - 1952</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr PB Gray</td>
+              <td scope="row">Mr AJ Brown</td>
+
+            </tr>
+
+            <tr>
+              <td scope="row">1950 - 1951</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr PB Gray</td>
+              <td scope="row">Mr AJ Brown</td>
+            </tr>
+
+
+             <tr>
+              <td scope="row">1949 - 1950</td>
+              <td scope="row">Joseph Reeves</td>
+              <td scope="row">Mr PB Gray</td>
+              <td scope="row">Mr AJ Brown</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><strong>With thanks to Paul and Angela Simmons for filling in the blanks.</strong></p>
+
+        <p class="backtotop">&#94; <a href="#top">Back to top</a></p>
+
+      </div><!--Content ends-->
+
+    </div><!--Row ends-->
+
+<!--@import footer-->

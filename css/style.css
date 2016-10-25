@@ -1,0 +1,552 @@
+/* Shortcuts:
+#breakpoints (for mobile breakpoints, tablets too etc)
+#testing (from when creating website, delete these)
+*/
+
+/* Basic element customisations - body, font faces, paragraph layout etc */
+
+body {
+  background-color: #fef0d9;
+  font-family: "Verdana", sans-serif;
+  font-size: 1.4rem;                                        /* for mobile, resized larger in breakpoint below */
+}
+
+h1,h2,h3,h4 {
+  font-family: "Georgia", serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+h1 {                                                      /* header sizes for mobile, overridden in breakpoint
+                                                          below */
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 0;
+  padding: 1.5rem;
+}
+
+img {
+  margin: 0;
+  padding: 2rem;
+}
+
+table {
+  font-size: 1.4rem;                                      /* for mobile, resized larger in breakpoint below */
+}
+
+h1,h2,h3.title {                                                /* title at top of all content pages */
+  padding: 1em 0 1.5em 0;
+  text-align: center;
+}
+h3.contents {
+  padding: 1.5em 0 0 0;
+}
+
+img.200 {
+  width: 200px;
+}
+img.fluid {
+  max-width: 90%;
+}
+img.left {
+  float: left;
+}
+img.link {                                                /* Link page image style to ensure it fits in table fine */
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+}
+img.right {
+  float: right;
+}
+
+h3.list-title {                                           /* title used in sidebar lists on website */
+  background: #fed957;
+  color: #000;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+p.backtotop {
+  font-weight: bolder;
+  padding: 2em 0 2em 0;
+  text-align: center;
+
+}
+
+ul.nostyle {                                             /* removes styling from lists as needed */
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
+ul.contents {
+  list-style: none;
+  margin: 20px auto;
+  text-align: center;
+  width: 70%;
+}
+
+ul.sitemap {
+  margin: 20px auto;
+  width: 70%;
+}
+
+
+/* Classes and IDs - customisations for individual elements/groups of
+elements */
+
+/* CofE id selectors for JavaScript imported elements for news box on home page */
+
+#cofe-rss-box {
+  background: #fff9d5;
+  margin: 0 40px 2em 20px;
+}
+
+#cofe-rss-box h2 a {
+  color: #000;
+  text-decoration: none;
+}
+
+#cofe-rss-box h2  {
+  background: #ffdb30;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5em;
+}
+
+#cofe-rss-box ul li {
+  list-style: none;
+  margin-left: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#cofe-rss-box p {
+  text-align: center;
+}
+
+/*#cofe-rss-box { border: 1px solid #A891C0; padding: 0; font-size: 90%; margin-bottom: 1em; }
+#cofe-rss-box h2 a { text-decoration: none; color: white;  }
+#cofe-rss-box h2 a:hover   { text-decoration: underline; color: white; }
+
+#cofe-rss-box ul { margin: 0; padding: 0; color: #333; }
+#cofe-rss-box ul li  { list-style-type: none; margin: 0; border-top: 1px solid #A891C0; padding: 0.5em;   }
+#cofe-rss-box p { background: white url('/images/rss/cofe-siterss-purple-logo.gif') no-repeat right; border-top: 1px solid #A891C0; margin: 0; padding: 0.5em 0.5em 0 0.5em;  height: 23px; }
+#cofe-rss-box .rss-description { padding-top: 5px; display: block; }*/
+
+#table {                                                  /* table on contacts page etc */
+  margin: 0 auto;
+  table-layout: fixed;
+  width: 75%;
+}
+#table td {
+  word-wrap: break-word;
+}
+
+#tableBig {                                                  /* tables with more columns, needs smaller font */
+  font-size: 1.2rem;
+  margin: 0 auto;
+  table-layout: fixed;
+  width: 90%;
+}
+
+#contentBox {
+  background: #fff url(../images/sidebar.jpg) repeat-y;   /* shadow for sidebar */
+  min-height: 500px;                                      /* keeps in line with sidebar to maintain illusion of
+                                                          shadow */
+  padding: 0 0 0 2rem;                                    /* keeps text from overlapping shadow */
+}
+
+#content {
+  background: #fff;                                       /* for pages that don't need the sidebar */
+  padding: 2em;
+}
+#content p {
+  width: 90%;
+  margin: 0 auto;
+}
+#content ul {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#footer {
+  background: #233341;
+  color: #fff;
+  font-size: 0.75em;
+  text-align: center;
+}
+#footer a:link {
+  color: #fff;
+}
+#footer a:visited {
+  color: #fff;
+}
+#footer ul li {
+  border-right: #fff solid 1px;                           /* adds the line effect to right of each link in footer */
+  display: inline-block;                                  /* displays everything horizontal instead of vertical */
+  margin-right: 20px;
+  padding-right: 20px;
+}
+#footer ul li:last-child {
+  border-right: 0;                                        /* stops border on last link */
+  margin-right: 0;
+}
+
+#formcontainer {                                          /* container for the contact forms to centre them */
+  width: 300px;
+  margin: 0 auto;
+}
+
+#header {                                                 /* header image background etc - set for mobile,
+                                                          overridden by breakpoints below*/
+  background: url(../images/header.jpg) no-repeat center;
+  height: 197px;
+  position: relative;                                     /* allows for absolute positioning of nav within
+                                                          header without taking it out of Skeleton's boxes */
+  text-align: center;                                     /* centres ALL text in header including
+                                                          navigation */
+}
+#header-title {                                           /* St. Andrew's Church text at top */
+  color: #fff;
+  font-size: 3rem;
+  margin: 0;                                              /* removes margin that skeleton.css adds to h1; this
+                                                          allows other elements to be flush against it */
+  padding: 0;
+  text-align: center;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+#Message {                                                /* Contact form text area size */
+  height: 400px;
+  width: 275px;
+}
+
+#nav {                                                    /* navigation links at top of each page */
+  background: #6f97bc;
+  color: #fff;
+  font-size: 1.75rem;
+  text-align: center;
+  width: 100%;                                            /* helps with centring navigation */
+}
+#nav a:link {
+  border-right: 0;                                        /* gets rid of the dividing line to the right of
+                                                          each nav link on mobile */
+  color: #fff;
+  padding-right: 20px;
+}
+#nav a:visited {
+  color: #fff;
+}
+#nav ul {
+  margin: 20px 0 0 0;                                       /* removes margin so aligns with bottom of box better
+                                                          - keeps margin on top to space from other text*/
+}
+#nav ul li {
+  display: block;                                         /* vertical list on mobile, changed to horizontal below */
+  font-size: 1.5rem;
+}
+#nav ul li:last-child {
+  margin-right: 0;                                        /* prevents margin from throwing off last list item */
+}
+#nav ul li:last-child a:link {
+  border-right: 0;                                        /* gets rid of line on final link in nav */
+}
+#nav p {
+  font-size: 1.0rem;
+}
+#nav #left {                                             /* aligns nav text for diocese etc to the left */
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
+}
+#nav #right {                                            /* similar but for right hand address text */
+  margin-bottom: 0;
+  margin-right: 0;
+  padding: 0;
+  text-align: center;
+}
+#nav .centre {
+  display: inline-block;                                  /* somehow causes nav to centre */
+  *display: inline;                                       /* IE7 */
+  *zoom: 1;
+  width: 95%;
+}
+
+#sidebarBox {
+  background: #587793;
+  min-height: 0;                                          /* prevents sidebar from taking up space when
+                                                          horizontal, applies on smallest mobile breakpoint
+                                                          when supported by statements below */
+}
+#sidebarBox ul {
+  color: #fff;
+  list-style: none;
+  margin: 20px auto;
+  text-align: center;
+  width: 70%;
+}
+#sidebarBox a:link {                                      /* keeps any links in sidebarBox from blending in
+                                                          with blue background */
+  color: #fff;
+}
+#sidebarBox a:visited {
+  color: #fff;
+}
+#sidebarLinks a:link {                                    /* sidebar link list stylings, About Us page etc */
+  color: #fff;
+}
+#sidebarLinks a:visited {
+  color: #fff;
+}
+#sidebarLinks li {
+  padding-bottom: 1.5em;
+}
+
+#top {                                                    /* navigation links at top of each page */
+  color: #fff;
+  font-size: 1.75rem;
+  text-align: right;
+  width: 100%;                                            /* helps with centring navigation */
+}
+#top img {
+  margin: 0;
+  padding: 0;
+}
+#top ul {
+  margin: 20px 0 0 0;                                       /* removes margin so aligns with bottom of box better
+                                                          - keeps margin on top to space from other text*/
+}
+#top ul li {
+  display: block;                                         /* vertical list on mobile, changed to horizontal below */
+  font-size: 1.5rem;
+}
+#top ul li:last-child {
+  margin-right: 0;                                        /* prevents margin from throwing off last list item */
+}
+
+#whoswhoBox {                                             /* box for photos on Who's Who page, centres them etc */
+  margin: 0 auto;
+  width: 200px;                                           /* good width for mobile */
+}
+
+.centre-600 {                                             /* centres images with 600px width */
+  max-width: 100%;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.link-logo {                                             /* Links page div style to make table cell fit logo image size */
+  margin: 0 auto;
+  width: 100px;
+}
+
+.left {
+  float: none;                                            /* just because floating doesn't work on mobile,
+                                                          same below */
+}
+
+.right {
+  float: none;
+}
+
+/* #breakpoints */
+
+@media screen and (max-width: 600px) {                    /* fix for table width, converts to pleasing
+                                                          mobile layout, for contacts page especially */
+  table {
+    width:100%;
+  }
+  thead {
+    display: none;
+  }
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+  }
+  tr td:first-child {
+    background: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align:center;
+  }
+}
+
+@media (min-width: 550px) {
+
+  body {
+    font-size: 1.6rem;                                    /* resize text for larger than mobile */
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.6rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.4rem;
+  }
+
+  table {
+    font-size: 1.6rem;                                    /* resize text for larger than mobile */
+  }
+
+  #header {                                               /* resize header for smaller than tablet */
+    background: url(../images/header-550.jpg) no-repeat center;
+    height: 255px;
+  }
+  #header-title {
+    font-size: 3.5rem;
+  }
+  #top-cofe {
+    height: 99px;
+    width: 13.3333333333%;
+    visibility: visible;                                     /* Shows on larger than mobile sizes */
+  }
+  #top-shield {
+    height: 88px;
+    width: 13.3333333333%;
+    visibility: visible;                                     /* Shows on larger than mobile sizes */
+  }
+
+  #nav a:link {
+    border-right: #fff solid 1px;                           /* adds the dividing line to the right of each nav link */
+  }
+
+  #nav ul li {
+    display: inline-block;                                  /* wraps with viewport size */
+    font-size: 1.5rem;
+    margin-right: 20px;                                     /* spacing for list items when horizontal */
+    text-align:left;
+    *display:inline;/* IE7 */
+    *zoom:1;
+
+  }
+  #nav p {
+    font-size: 1.2rem;
+  }
+  #nav #left {                                             /* aligns nav text for diocese etc to the left and sizes
+                                                            down so it doesn't wrap too much on max res */
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding: 0;
+    text-align: left;
+  }
+  #nav #right {                                            /* similar but for right hand address text */
+    margin-bottom: 0;
+    margin-right: 20px;
+    padding: 0;
+    text-align: right;
+  }
+  #sidebarBox {
+    min-height: 500px;                                    /* assures it's always the same min height as content,
+                                                          has to change with breakpoints so when it goes horizontal
+                                                          it doesn't take up loads of space */
+  }
+
+  #top ul li {
+    display: inline-block;                                /* wraps with viewport size */
+    font-size: 1.5rem;
+    margin-right: 20px;                                   /* spacing for list items when horizontal */
+    text-align:left;
+    *display:inline;/* IE7 */
+    *zoom:1;
+
+  }
+
+  #whoswhoBox {                                           /* box for photos on Who's Who page, centres them etc */
+    margin: 0 auto;
+    width: 400px;                                         /* widens for tablet and larger resolution */
+  }
+  #whoswhoBox .fix {
+    margin-left: 15px;                                    /* because first column is for some reason misaligned
+                                                          added to first five columns on page */
+  }
+
+                                                          /* Below needs to be prevented from running when in
+                                                          full screen, hurts margin on right */
+  .eight.columns.nomargin {                               /* trying to get rid of 4% margin-left in columns
+                                                          CSS so can have sidebar shadow - need content to be
+                                                          flush to the sidebar to achieve this so I can put
+                                                          it in the background of content */
+    margin-left: 0;                                       /* 4% got rid of! */
+    width: 69.3333333333%;                                /* fixes lack of 4% margin left by adding 4% -
+                                                          breaks on mobile, doesn't line up on right */
+  }
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+}
+@media (min-width: 750px) {
+  #content p {                                            /* better margins for text on desktop */
+    width: 60%;
+    margin: 0 auto;
+  }
+  #header {                                               /* resize header for tablet */
+    background: url(../images/header-750.jpg) no-repeat center;
+    height: 277px;
+  }
+  #header-title {
+    font-size: 4.5rem;
+  }
+
+  #nav ul {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  #header {                                               /* resize header for desktop */
+    background: url(../images/header-1000.jpg);
+    height: 443px;
+  }
+  #header-title {
+    font-size: 6rem;
+    margin-top: 40px;
+  }
+
+  #nav {
+    background: url(../images/nav-1000.jpg);
+    height: 113px;
+  }
+  #nav ul {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #nav p {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,106 @@
+<!--$page-title History &mdash; About Us-->
+<!--$description The history of St. Andrew's Church, Ferring-->
+<!--$dir ../../-->
+<!--$jquery <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+-->
+<!--$keywords 1250, architecture, doomsday, history, norman, saxon -->
+<!--$sidebarscript <script>
+    // Script to make content and sidebar same height no matter what!
+    // placing objects inside variables
+
+    //#added the below if statement to make sure this doesn't run on mobile
+
+    if ($(window).width() > 550){
+      var content = $('#contentBox');
+      var sidebar = $('#sidebarBox');
+      var count = 0;
+      var myTimer;
+
+      function setEqualContainer() {
+        // get content and sidebar height in variables
+        var getContentHeight = content.outerHeight();
+        var getSidebarHeight = sidebar.outerHeight();
+
+        // check if content height is bigger than sidebar
+        if ( getContentHeight > getSidebarHeight ) {
+          sidebar.css('min-height', getContentHeight);
+        }
+
+        // check if sidebar height is bigger than content
+        if ( getSidebarHeight > getContentHeight ) {
+          content.css('min-height', getSidebarHeight);
+        }
+      }
+
+      // creating the timer which will run every 500 milliseconds
+      // and will stop after the container will be loaded
+      // ...or after 15 seconds to not eat a lot of memory
+      myTimer = setInterval( function() {
+        count++;
+
+        if ( $('.testContainer').length == 0 ) {
+          setEqualContainer();
+        } else {
+          setEqualContainer();
+          clearInterval(myTimer);
+        }
+
+        if ( count == 15) {
+          clearInterval(myTimer);
+        }
+      }, 500);
+    }
+  </script>
+-->
+<!--$tablescript nil-->
+<!--$unitegallery nil-->
+
+<!--@import opening-->
+
+    <!--Row begins--><div class="row">
+
+      <!--Side navigation/info begin #side--><div class="four columns" id="sidebarBox">
+
+        <h3 class="list-title">About Us</h3>
+
+        <ul id="sidebarLinks">
+          <li><a href="../">Who's Who</a></li>
+          <li><a href="https://goo.gl/maps/NSJ76SqrDo32">Where To Find<br />St. Andrew's</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="../priests">Priests at<br />St. Andrew's</a></li>
+          <li><a href="../wardens">Churchwardens at<br />St Andrew's</a></li>
+        </ul>
+      </div><!--Side navigation/info ends-->
+
+      <!--Content begins #content--><div class="eight columns nomargin" id="contentBox">
+
+        <h1 class="title">History of St. Andrew's</h1>
+
+        <p>St Andrew’s Church stands on a low hill in the heart of the old part of Ferring Village amongst some of the oldest cottages in the village.</p>
+
+        <img src="../../images/church-gate-ls.jpg" alt="" class="fluid" />
+
+        <p>Ferring is probably one of the oldest churches in Sussex. At the time of the Doomsday Survey, the 'demesne of ferringes' had two ploughs, while 15 villeins and 14 bordars had five ploughs (a plough being a measure of the arable land which could be worked by a plough with a team of eight oxen).</p>
+
+
+        <p>The first church of St Andrew in Ferring was built between 765 and 791. With it was associated the endowment of land which became the basis of Ferring Manor, an episcopal property of the see of Selsey. Together, church and manor were established as the centre of village life well before the Norman Conquest.</p>
+
+        <img src="../../images/church-altar-01.jpg" alt="" class="fluid left" />
+          <p>The existing building was started in about 1120 on the site of the original church. The west wall and south wall in the Nave date back to this time. The church was enlarged in 1250, when the chancel was built and the northern side extended.</p>
+
+        <p>It has been suggested that, centuries ago, the current porch formed the base of a tower, a possibility which might account for the blocked-up doorway seen on the inner side of the east wall.</p>
+
+        <p>The church has seen Ferring grow from a small hamlet of under a hundred souls to the present active and successful community of just under five thousand.</p>
+          <img src="../../images/church-entrance-250.jpg" alt="" class="fluid right" />
+
+        <p>All this time the church has helped the people of Ferring in good and difficult times.</p>
+
+        <p>Our church guide book, with further information on St Andrew's and the village of Ferring, is being revised for a new edition.</p>
+
+        <p>But for more on the history of the church please see <a href="http://www.ferringhistorygroup.co.uk/st-andrews-church-the-first-1250-years/">our page on Ferring History Group</a>.</p>
+
+      </div><!--Content ends-->
+
+    </div><!--Row ends-->
+
+<!--@import footer-->

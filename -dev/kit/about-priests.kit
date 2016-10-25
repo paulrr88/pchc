@@ -1,0 +1,281 @@
+<!--$page-title Priests at St. Andrew's &mdash; About Us-->
+<!--$description Priests at St. Andrew's Church, Ferring over the last 800 years!-->
+<!--$dir ../../-->
+<!--$jquery <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+-->
+<!--$keywords 1250, doomsday, history, norman, preacher, priest, saxon, vicar -->
+<!--$sidebarscript <script>
+    // Script to make content and sidebar same height no matter what!
+    // placing objects inside variables
+
+    //#added the below if statement to make sure this doesn't run on mobile
+
+    if ($(window).width() > 550){
+      var content = $('#contentBox');
+      var sidebar = $('#sidebarBox');
+      var count = 0;
+      var myTimer;
+
+      function setEqualContainer() {
+        // get content and sidebar height in variables
+        var getContentHeight = content.outerHeight();
+        var getSidebarHeight = sidebar.outerHeight();
+
+        // check if content height is bigger than sidebar
+        if ( getContentHeight > getSidebarHeight ) {
+          sidebar.css('min-height', getContentHeight);
+        }
+
+        // check if sidebar height is bigger than content
+        if ( getSidebarHeight > getContentHeight ) {
+          content.css('min-height', getSidebarHeight);
+        }
+      }
+
+      // creating the timer which will run every 500 milliseconds
+      // and will stop after the container will be loaded
+      // ...or after 15 seconds to not eat a lot of memory
+      myTimer = setInterval( function() {
+        count++;
+
+        if ( $('.testContainer').length == 0 ) {
+          setEqualContainer();
+        } else {
+          setEqualContainer();
+          clearInterval(myTimer);
+        }
+
+        if ( count == 15) {
+          clearInterval(myTimer);
+        }
+      }, 500);
+    }
+  </script>
+-->
+<!--$tablescript <script>
+    // fix for mobile table layout
+
+    var headertext = [];
+    var headers = document.querySelectorAll("thead");
+    var tablebody = document.querySelectorAll("tbody");
+
+    for (var i = 0; i < headers.length; i++) {
+      headertext[i]=[];
+      for (var j = 0, headrow; headrow = headers[i].rows[0].cells[j]; j++) {
+        var current = headrow;
+        headertext[i].push(current.textContent);
+        }
+    }
+
+    for (var h = 0, tbody; tbody = tablebody[h]; h++) {
+      for (var i = 0, row; row = tbody.rows[i]; i++) {
+        for (var j = 0, col; col = row.cells[j]; j++) {
+          col.setAttribute("data-th", headertext[h][j]);
+        }
+      }
+    }
+  </script>
+-->
+<!--$unitegallery nil-->
+
+<!--@import opening-->
+
+    <!--Row begins--><div class="row">
+
+      <!--Side navigation/info begin #side--><div class="four columns" id="sidebarBox">
+
+        <h3 class="list-title">About Us</h3>
+
+        <ul id="sidebarLinks">
+          <li><a href="../">Who's Who</a></li>
+          <li><a href="https://goo.gl/maps/NSJ76SqrDo32">Where To Find<br />St. Andrew's</a></li>
+          <li><a href="../history">History</a></li>
+          <li><a href="#">Priests at<br />St. Andrew's</a></li>
+          <li><a href="../wardens">Churchwardens at<br />St Andrew's</a></li>
+        </ul>
+      </div><!--Side navigation/info ends-->
+
+      <!--Content begins #content--><div class="eight columns nomargin" id="contentBox">
+
+        <h1 class="title">Priests at St. Andrew's</h1>
+
+        <table id="table" summary="St. Andrew's Church list of contacts">
+          <thead>
+            <tr>
+              <th scope="col">Year</th>
+              <th scope="col">Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">Circa 1250</td>
+              <td scope="row">Simon</td>
+            </tr>
+            <tr>
+              <td scope="row">1403</td>
+              <td scope="row">William Blunteshaw</td>
+            </tr>
+            <tr>
+              <td scope="row">1407</td>
+              <td scope="row">John de Eolith</td>
+            </tr>
+            <tr>
+              <td scope="row">1407</td>
+              <td scope="row">Thomas Breton</td>
+            </tr>
+            <tr>
+              <td scope="row">1411</td>
+              <td scope="row">Thomas atte Woode</td>
+            </tr>
+            <tr>
+              <td scope="row">1415</td>
+              <td scope="row">Thomas Wylenale</td>
+            </tr>
+            <tr>
+              <td scope="row">1439</td>
+              <td scope="row">Richard Fyge</td>
+            </tr>
+            <tr>
+              <td scope="row">1532</td>
+              <td scope="row">John Brestall</td>
+            </tr>
+            <tr>
+              <td scope="row">1532</td>
+              <td scope="row">George Lees</td>
+            </tr>
+            <tr>
+              <td scope="row">1556</td>
+              <td scope="row">George Fayrebank</td>
+            </tr>
+            <tr>
+              <td scope="row">1558</td>
+              <td scope="row">John Lawe</td>
+            </tr>
+            <tr>
+              <td scope="row">1563</td>
+              <td scope="row">John Godman</td>
+            </tr>
+            <tr>
+              <td scope="row">1578</td>
+              <td scope="row">George Watersfield</td>
+            </tr>
+            <tr>
+              <td scope="row">1599</td>
+              <td scope="row">Peter Walters</td>
+            </tr>
+            <tr>
+              <td scope="row">1606</td>
+              <td scope="row">John Bell</td>
+            </tr>
+            <tr>
+              <td scope="row">1611</td>
+              <td scope="row">Jeffrey More</td>
+            </tr>
+            <tr>
+              <td scope="row">1632</td>
+              <td scope="row">Arthur Owen</td>
+            </tr>
+            <tr>
+              <td scope="row">1655</td>
+              <td scope="row">Nicholas Shepherd&#42;</td>
+            </tr>
+            <tr>
+              <td scope="row">1656</td>
+              <td scope="row">Richard Meggs&#42;</td>
+            </tr>
+            <tr>
+              <td scope="row">1658</td>
+              <td scope="row">Edward Bushwell&#42;</td>
+            </tr>
+            <tr>
+              <td scope="row">1659</td>
+              <td scope="row">John Crufts</td>
+            </tr>
+            <tr>
+              <td scope="row">1661</td>
+              <td scope="row">Steven Worger</td>
+            </tr>
+            <tr>
+              <td scope="row">1666</td>
+              <td scope="row">Charles Cutter</td>
+            </tr>
+            <tr>
+              <td scope="row">1716</td>
+              <td scope="row">William Albright</td>
+            </tr>
+            <tr>
+              <td scope="row">1766</td>
+              <td scope="row">James Penfold</td>
+            </tr>
+            <tr>
+              <td scope="row">1812</td>
+              <td scope="row">Francis Whitcombe</td>
+            </tr>
+            <tr>
+              <td scope="row">1832</td>
+              <td scope="row">Henry Dixon, R.D.</td>
+            </tr>
+            <tr>
+              <td scope="row">1870</td>
+              <td scope="row">Gregory Walter Pennithorne, R.D.</td>
+            </tr>
+            <tr>
+              <td scope="row">1886</td>
+              <td scope="row">Robert Blight</td>
+            </tr>
+            <tr>
+              <td scope="row">1888</td>
+              <td scope="row">Arthur Mackreth Deane, R.D.</td>
+            </tr>
+            <tr>
+              <td scope="row">1918</td>
+              <td scope="row">Hector William Grepe</td>
+            </tr>
+            <tr>
+              <td scope="row">1924</td>
+              <td scope="row">Thomas Harry Lee Jellicoe</td>
+            </tr>
+            <tr>
+              <td scope="row">1927</td>
+              <td scope="row">Stuart M. Morgan</td>
+            </tr>
+            <tr>
+              <td scope="row">1934</td>
+              <td scope="row">H. Copley Moyle</td>
+            </tr>
+            <tr>
+              <td scope="row">1945</td>
+              <td scope="row">Joseph Wilfred Reeves, R.D.</td>
+            </tr>
+            <tr>
+              <td scope="row">1973</td>
+              <td scope="row">Rex Douglas Trevor Paterson</td>
+            </tr>
+            <tr>
+              <td scope="row">1996</td>
+              <td scope="row">Keith McNicol</td>
+            </tr>
+            <tr>
+              <td scope="row">2001</td>
+              <td scope="row">Terry Stratford</td>
+            </tr>
+            <tr>
+              <td scope="row">2009</td>
+              <td scope="row">Gary Simon Ingram (Priest in Charge)</td>
+            </tr>
+            <tr>
+              <td scope="row">2011</td>
+              <td scope="row">Gary Simon Ingram (Vicar)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>&#42;Preachers of the Gospel</p>
+
+        <p class="backtotop">&#94; <a href="#top">Back to top</a></p>
+
+      </div><!--Content ends-->
+
+    </div><!--Row ends-->
+
+<!--@import footer-->

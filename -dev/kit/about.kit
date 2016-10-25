@@ -1,0 +1,116 @@
+<!--$page-title Who's Who &mdash; About Us-->
+<!--$description Photos of our leading staff members at St. Andrew's Church, Ferring!-->
+<!--$dir ../-->
+<!--$jquery <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+-->
+<!--$keywords churchwarden, clergy, curate, reverend, PCC, photos, treasurer, vicar, warden-->
+<!--$sidebarscript <script>
+    // Script to make content and sidebar same height no matter what!
+    // placing objects inside variables
+
+    //#added the below if statement to make sure this doesn't run on mobile
+
+    if ($(window).width() > 550){
+      var content = $('#contentBox');
+      var sidebar = $('#sidebarBox');
+      var count = 0;
+      var myTimer;
+
+      function setEqualContainer() {
+        // get content and sidebar height in variables
+        var getContentHeight = content.outerHeight();
+        var getSidebarHeight = sidebar.outerHeight();
+
+        // check if content height is bigger than sidebar
+        if ( getContentHeight > getSidebarHeight ) {
+          sidebar.css('min-height', getContentHeight);
+        }
+
+        // check if sidebar height is bigger than content
+        if ( getSidebarHeight > getContentHeight ) {
+          content.css('min-height', getSidebarHeight);
+        }
+      }
+
+      // creating the timer which will run every 500 milliseconds
+      // and will stop after the container will be loaded
+      // ...or after 15 seconds to not eat a lot of memory
+      myTimer = setInterval( function() {
+        count++;
+
+        if ( $('.testContainer').length == 0 ) {
+          setEqualContainer();
+        } else {
+          setEqualContainer();
+          clearInterval(myTimer);
+        }
+
+        if ( count == 15) {
+          clearInterval(myTimer);
+        }
+      }, 500);
+    }
+  </script>
+-->
+<!--$tablescript nil-->
+<!--$unitegallery nil-->
+
+<!--@import opening-->
+
+    <!--Row begins--><div class="row">
+
+      <!--Side navigation/info begin #side--><div class="four columns" id="sidebarBox">
+
+        <h3 class="list-title">About Us</h3>
+
+        <ul id="sidebarLinks">
+          <li><a href="">Who's Who</a></li>
+          <li><a href="https://goo.gl/maps/NSJ76SqrDo32">Where To Find<br />St. Andrew's</a></li>
+          <li><a href="history">History</a></li>
+          <li><a href="priests">Priests at<br />St. Andrew's</a></li>
+          <li><a href="wardens">Churchwardens at<br />St Andrew's</a></li>
+        </ul>
+      </div><!--Side navigation/info ends-->
+
+      <!--Content begins #content--><div class="eight columns nomargin" id="contentBox">
+
+        <h1 class="title">Who's Who</h1>
+
+        <!--Who's Who images begin #whoswho--><div id="whoswhoBox">
+
+          <div class="five columns fix">
+            <img src="../images/whoswho-gary.jpg" alt="Picture of Rev. Gary Ingram" />
+            <p>Reverend Gary Ingram, Vicar</p>
+          </div>
+          <div class="five columns offset-by-one">
+            <img src="../images/whoswho-jill.jpg" alt="Picture of Reverend Jill Simpson" />
+            <p>Reverend Jill Simpson, Curate</p>
+          </div>
+          <div class="five columns">
+            <img src="../images/whoswho-paul.jpg" alt="Picture of Canon Paul Simmonds" />
+            <p>Canon Paul Simmonds</p>
+          </div>
+          <div class="five columns offset-by-one">
+            <img src="../images/whoswho-gail.jpg" alt="Picture of Gail Holly" />
+            <p>Gail Holly, Churchwarden</p>
+          </div>
+          <div class="five columns">
+            <img src="../images/whoswho-john.jpg" alt="Picture of John Soper" />
+            <p>John Soper, Churchwarden</p>
+          </div>
+          <div class="five columns offset-by-one">
+            <img src="../images/whoswho-susan.jpg" alt="Picture of Susan Maund" />
+            <p>Susan Maund, PCC Secretary</p>
+          </div>
+          <div class="five columns u-cf">
+            <img src="../images/whoswho-alan.jpg" alt="Picture of Alan Plummer" />
+            <p>Alan Plummer, PCC Treasurer</p>
+          </div>
+
+        </div>
+
+      </div><!--Content ends-->
+
+    </div><!--Row ends-->
+
+<!--@import footer-->
